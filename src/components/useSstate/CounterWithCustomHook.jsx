@@ -1,12 +1,13 @@
 import React from 'react';
 import '../useSstate/CounterApp.css'
 import { useCounter } from '../../hooks/useCounter';
+import MultipleCustomHooks from '../examples/MultipleCustomHooks';
 ;
 
 
 const CounterWithCustomHook = () => {
 
-  const {state:counter, increment, decrement, reset} = useCounter(100);
+  const {state:counter, increment, decrement, reset} = useCounter(1);
 
   return <>
     <h1>Count with hooks: { counter }</h1>
@@ -17,6 +18,8 @@ const CounterWithCustomHook = () => {
     {/* SI SE DESEARA MANDAR PARAMETROS SE DEBE DE HACER DE LA SIGUIENTE MANERA  */}
     <button className='btn' onClick={ () => decrement(2) }>-2</button>
     {/* DECREMENTARIA DE DOS EN DOS  */}
+    <hr />
+    <MultipleCustomHooks id={ counter }/>
   </>;
 };
 

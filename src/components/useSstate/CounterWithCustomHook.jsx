@@ -1,8 +1,6 @@
 import React from 'react';
 import '../useSstate/CounterApp.css'
 import { useCounter } from '../../hooks/useCounter';
-import MultipleCustomHooks from '../examples/MultipleCustomHooks';
-;
 
 
 const CounterWithCustomHook = () => {
@@ -19,7 +17,6 @@ const CounterWithCustomHook = () => {
     <button className='btn' onClick={ () => decrement(2) }>-2</button>
     {/* DECREMENTARIA DE DOS EN DOS  */}
     <hr />
-    <MultipleCustomHooks id={ counter }/>
   </>;
 };
 

@@ -13,6 +13,10 @@ import LayoutEffect from './components/useLayoutEffect/LayoutEffect';
 import Memorize from './components/memos/Memorize';
 import MemoHook from './components/memos/MemoHook';
 import CallBack from './components/memos/CallBack';
+import TodoApp from './components/useReducer/TodoApp';
+
+// import './components/useReducer/IntroReducer'; 
+//!LA LINEA DE ARRIBA ES LA EJEMPLIFICACION DE REDUCER, PERO ESTA COMENTADA PORQUE LANZA MUCHOS LOGS
 
 ReactDOM.render(
   <React.StrictMode>
@@ -30,6 +34,9 @@ ReactDOM.render(
     <Memorize />
     <MemoHook />
     <CallBack />
+    <hr />
+    <h1>A partir de aqui usamos Reducer</h1>
+    <TodoApp />
   </React.StrictMode>,
   document.getElementById('root')
 );

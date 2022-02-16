@@ -59,9 +59,7 @@ const TodoApp = () => {
       payload: {toDo:desc},
     };
     dispatch(action);
-  };
-
-  
+  };  
 
   useEffect(() => {
     // SI LOS TODOS CAMBIAN GRABO EN EL LOCAL STORAGE

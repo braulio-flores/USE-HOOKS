@@ -13,8 +13,8 @@ import './index.css';
 // import Memorize from './components/memos/Memorize';
 // import MemoHook from './components/memos/MemoHook';
 // import CallBack from './components/memos/CallBack';
-// import TodoApp from './components/useReducer/TodoApp';
-import MainApp from './components/useContext/MainApp';
+import TodoApp from './components/useReducer/TodoApp';
+// import MainApp from './components/useContext/MainApp';
 
 // import './components/useReducer/IntroReducer'; 
 //!LA LINEA DE ARRIBA ES LA EJEMPLIFICACION DE REDUCER, PERO ESTA COMENTADA PORQUE LANZA MUCHOS LOGS
@@ -47,8 +47,7 @@ import MainApp from './components/useContext/MainApp';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MainApp />
-    
+    <TodoApp />    
   </React.StrictMode>,
   document.getElementById('root')
 );
